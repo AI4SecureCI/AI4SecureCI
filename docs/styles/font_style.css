@@ -1,8 +1,0 @@
-body { font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #142033; line-height: 1.6; }
-h1, h2, h3 { color: #07111f; line-height: 1.2; }
-.hero h1, .hero h2 { color: white; }
-p { color: #3f4d63; }
-a { color: #235fd8; }
-.simple_hyper { font-weight: 700; text-decoration: none; }
-.simple_hyper:hover { text-decoration: underline; }
-code { background: #eef3fb; padding: .1rem .25rem; border-radius: 4px; }

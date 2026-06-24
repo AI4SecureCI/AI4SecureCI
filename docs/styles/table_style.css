@@ -1,5 +1,0 @@
-.tbl_align { width: min(1100px, 94%); margin: 2rem auto 3rem; border-collapse: collapse; background: white; border: 1px solid #dce4f2; box-shadow: 0 12px 32px rgba(7,17,31,.07); border-radius: 16px; overflow: hidden; }
-.tbl_align th, .tbl_align td { border: 1px solid #dce4f2; padding: .85rem; vertical-align: top; text-align: left; }
-.tbl_align th { background: #10233f; color: white; }
-.tbl_align tr:nth-child(even) td { background: #f8fbff; }
-.link_button { border: none; background: none; color: #235fd8; text-decoration: underline; cursor: pointer; padding: 0; font: inherit; }

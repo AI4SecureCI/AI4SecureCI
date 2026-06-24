@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="AI4SecureCI logo">
-<defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#2f6fed"/><stop offset="100%" stop-color="#07111f"/></linearGradient></defs>
-<rect width="128" height="128" rx="28" fill="url(#g)"/>
-<path d="M64 18l38 16v27c0 25-15 42-38 51-23-9-38-26-38-51V34l38-16z" fill="none" stroke="#fff" stroke-width="8" stroke-linejoin="round"/>
-<circle cx="64" cy="62" r="17" fill="#fff"/>
-<path d="M64 45v34M47 62h34" stroke="#2f6fed" stroke-width="7" stroke-linecap="round"/></svg>
