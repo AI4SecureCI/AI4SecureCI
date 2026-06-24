@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AI4SecureCI | Modules</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI4SecureCI: AI-assisted malware detection and classification in cloud cyberinfrastructure.">
+    <link rel="icon" type="image/svg+xml" href="resources/favicon.svg">
+    <link rel="stylesheet" href="styles/align.css">
+    <link rel="stylesheet" href="styles/font_style.css">
+    <link rel="stylesheet" href="styles/top_nav.css">
+    <link rel="stylesheet" href="styles/table_style.css">
+    <script type="text/javascript" src="js/file_download.js" defer></script>
+</head>
+<body>
+
+    <div class="navbar" id="topnav">
+        <a class="brand" href="index.html" aria-label="AI4SecureCI Home">
+            <img src="resources/ai4secureci-logo.svg" alt="AI4SecureCI Logo">
+            <span>AI4SecureCI</span>
+        </a>
+        <a href="index.html">Home</a>
+        <a href="modules.html">Modules</a>
+        <a href="contact.html">Contact</a>
+        <a href="award_details.html">Project Details</a>
+    </div>
+    <main>
+        <div class="hv_align" id="bodytext">
+            <h1>Modules</h1>
+            <p style="text-align: left;">
+                AI4SecureCI modules are designed as self-contained units for cloud cyberinfrastructure
+                cybersecurity training. Each module connects lecture material with hands-on lab activities.
+                Public website content should describe the learning objectives, safe workflow, and evaluation
+                expectations without distributing malware samples, credentials, or unsafe operational material.
+            </p>
+            <br>
+            <p style="text-align: left;">
+                This page is customized for the GitHub Pages site
+                <a href="https://ai4secureci.github.io/AI4SecureCI/">https://ai4secureci.github.io/AI4SecureCI/</a>. Replace placeholder repository, Docker, slide, and video
+                links when your module materials are ready.
+            </p>
+            <br>
+            <p style="text-align: left; color: #9d1c1c">
+                <b>Safety note:</b> publish only sanitized logs, derived features, diagrams, notebooks using benign
+                or safe data, and high-level lab instructions. Do not publish live malware samples or secrets.
+            </p>
+        </div>
+        <table class="tbl_align">
+            <tr>
+                <th>#</th>
+                <th>Module / Concepts</th>
+                <th>GitHub Repository</th>
+                <th>Environment / Container</th>
+                <th>Student Materials</th>
+                <th>Lecture Videos</th>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><b>Online Malware Detection in Cloud CI</b><br>
+                    Static/dynamic malware analysis, runtime behavior monitoring, system/API calls,
+                    memory/process/file-system/network behavior, and AI/ML-assisted online detection.</td>
+                <td><a href="https://github.com/ai4secureci/AI4SecureCI">ai4secureci/AI4SecureCI</a></td>
+                <td>Isolated VM or controlled cloud-CI testbed</td>
+                <td><button onclick="dl_module('module-3')" class="link_button">module-3 materials</button></td>
+                <td>Coming soon</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><b>Classifying Malware Threats in Cloud CI</b><br>
+                    Malware types and families, API-call behavioral features, ML classification,
+                    clustering-based analysis, and LLM-assisted malware-family classification.</td>
+                <td><a href="https://github.com/ai4secureci/AI4SecureCI">ai4secureci/AI4SecureCI</a></td>
+                <td>Sanitized behavioral/API-call dataset</td>
+                <td><button onclick="dl_module('module-4')" class="link_button">module-4 materials</button></td>
+                <td>Coming soon</td>
+            </tr>
+            <tr>
+                <td>Lab 3</td>
+                <td><b>Online Malware Detection Lab</b><br>
+                    Collect and preprocess behavior data in a safe isolated workflow, train an online detector,
+                    and report model performance with graphs and justification.</td>
+                <td><a href="https://github.com/ai4secureci/AI4SecureCI">ai4secureci/AI4SecureCI</a></td>
+                <td>Controlled isolated lab environment</td>
+                <td>Use sanitized student package only</td>
+                <td>Coming soon</td>
+            </tr>
+            <tr>
+                <td>Lab 4</td>
+                <td><b>Malware Family Classification Lab</b><br>
+                    Train and evaluate classifiers on behavioral/API-call features and report per-family
+                    precision, recall, F1-score, and confusion matrix.</td>
+                <td><a href="https://github.com/ai4secureci/AI4SecureCI">ai4secureci/AI4SecureCI</a></td>
+                <td>Sanitized ML environment</td>
+                <td>Use sanitized student package only</td>
+                <td>Coming soon</td>
+            </tr>
+        </table>
+    </main>
+    <footer><p>© 2026 AI4SecureCI. Repository: <a href="https://github.com/ai4secureci/AI4SecureCI">https://github.com/ai4secureci/AI4SecureCI</a></p></footer>
+</body>
+</html>
