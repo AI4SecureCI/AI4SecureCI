@@ -14,54 +14,72 @@
       min-width: 1000px;
     }
 
-    .topbar {
-      background: #12355b;
-      color: white;
-      padding: 18px 0;
-    }
-
     .container {
       width: 960px;
       margin: 0 auto;
     }
 
-    .site-title {
-      font-size: 26px;
-      font-weight: bold;
-      margin-bottom: 6px;
+    .top-header {
+      background: #ffffff;
+      border-bottom: 1px solid #d0d7de;
+      padding: 18px 0;
     }
 
-    .site-subtitle {
-      font-size: 14px;
-      color: #d9e6f2;
+    .logo-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .university-logo {
+      width: 120px;
+      height: auto;
+    }
+
+    .site-title-area {
+      text-align: center;
+    }
+
+    .site-title-area h1 {
+      margin: 0;
+      color: #12355b;
+      font-size: 34px;
+      letter-spacing: 0.5px;
+    }
+
+    .site-title-area p {
+      margin: 6px 0 0;
+      color: #4b5563;
+      font-size: 15px;
     }
 
     .nav {
-      background: #ffffff;
-      border-bottom: 1px solid #d0d7de;
+      background: #12355b;
+      border-bottom: 1px solid #0f2d4d;
     }
 
     .nav a {
       display: inline-block;
-      padding: 14px 20px;
-      color: #12355b;
+      padding: 14px 22px;
+      color: white;
       text-decoration: none;
       font-weight: bold;
+      font-size: 15px;
     }
 
     .nav a:hover {
-      background: #eef3f8;
+      background: #0f2d4d;
     }
 
     .nav a.active {
-      background: #e6eef7;
+      background: #0b2540;
     }
 
     .page-header {
       padding: 36px 0 20px;
     }
 
-    .page-header h1 {
+    .page-header h2 {
       margin: 0 0 10px;
       font-size: 32px;
       color: #12355b;
@@ -127,11 +145,24 @@
 
 <body>
 
-  <header class="topbar">
+  <header class="top-header">
     <div class="container">
-      <div class="site-title">AI4SecureCI</div>
-      <div class="site-subtitle">AI-driven cloud cyberinfrastructure security education</div>
+      <div class="logo-row">
+
+```
+    <img src="tntech-logo.png" alt="Tennessee Tech University Logo" class="university-logo">
+
+    <div class="site-title-area">
+      <h1>AI4SecureCI</h1>
+      <p>AI-driven cloud cyberinfrastructure security education</p>
     </div>
+
+    <img src="ncat-logo.png" alt="North Carolina A&T State University Logo" class="university-logo">
+
+  </div>
+</div>
+```
+
   </header>
 
   <nav class="nav">
@@ -147,7 +178,7 @@
 
 ```
 <section class="page-header">
-  <h1>Contact</h1>
+  <h2>Contact</h2>
   <p>
     For questions about AI4SecureCI, project collaboration, educational modules,
     research activities, or implementation details, please contact the project team.
