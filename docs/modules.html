@@ -1,108 +1,99 @@
-<!doctype html>
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Modules | AI4SecureCI</title>
-
-<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/AI4SecureCI/AI4SecureCI/refs/heads/main/aatttu.png"><style>
-/* Very simple reusable website theme */
-:root {
-  --bg: #ffffff;
-  --text: #222222;
-  --muted: #555555;
-  --line: #d8d8d8;
-  --soft: #f6f8fa;
-  --accent: #1f5f99;
-  --accent-dark: #16476f;
-}
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modules | AI4SecureCI</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/AI4SecureCI/AI4SecureCI/refs/heads/main/aatttu.png">
+  <style>
+/* Extracted AIMA-style layout applied to AI4SecureCI pages. */
 * { box-sizing: border-box; }
 
 body {
+  background-color: white;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--text);
-  background: var(--bg);
+  color: #222;
   line-height: 1.55;
 }
 
-a { color: var(--accent); }
-a:hover { color: var(--accent-dark); }
-
-.container {
-  width: min(1050px, calc(100% - 32px));
-  margin: 0 auto;
-}
-
-.site-header {
-  background: var(--soft);
-  border-bottom: 1px solid var(--line);
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  padding: 10px 0;
-}
-
-.brand {
+/* Top Navbar of Page */
+.navbar {
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: var(--text);
-  text-decoration: none;
+  gap: 18px;
+  padding: 12px 42px;
+  border-bottom: 1px solid #16476f;
+  background-color: #1f5f99;
 }
 
-.site-logo {
-  height: 56px;
+.navbar img {
+  height: 64px;
   width: auto;
-  display: block;
+  max-width: 320px;
+  object-fit: contain;
+  margin-right: 18px;
 }
 
-.nav-links {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.nav-links a {
-  color: var(--text);
+.navbar a {
+  color: #ffffff;
   text-decoration: none;
-  padding: 7px 10px;
-  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px 10px;
+  white-space: nowrap;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-  background: var(--accent);
-  color: white;
+.navbar a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
-main { padding: 28px 0 40px; }
+.hv_align {
+  width: min(1050px, calc(100% - 48px));
+  margin: 34px auto;
+  text-align: center;
+}
+
+.hv_align p,
+.hv_align li,
+.hv_align td,
+.hv_align th {
+  text-align: left;
+}
+
+.hv_align h1,
+.hv_align h2,
+.hv_align h3 {
+  text-align: center;
+}
+
+h1 { font-size: 2rem; margin: 0 0 12px; }
+h2 { font-size: 1.35rem; margin: 28px 0 10px; }
+h3 { font-size: 1.05rem; margin: 18px 0 8px; }
+p { margin: 0 0 12px; }
+a { color: #1f5f99; }
+a:hover { color: #16476f; }
+ul, ol { margin-top: 6px; padding-left: 22px; }
+li { margin: 4px 0; }
 
 .page-title {
-  border-bottom: 2px solid var(--line);
+  border-bottom: 2px solid #d8d8d8;
   margin-bottom: 24px;
   padding-bottom: 12px;
 }
 
-h1 { font-size: 2rem; margin: 0 0 8px; }
-h2 { font-size: 1.35rem; margin: 28px 0 10px; }
-h3 { font-size: 1.05rem; margin: 18px 0 8px; }
-
-p { margin: 0 0 12px; }
-.lead { color: var(--muted); font-size: 1.05rem; max-width: 850px; }
+.lead {
+  color: #555;
+  font-size: 1.05rem;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .simple-box {
-  border: 1px solid var(--line);
-  background: var(--soft);
+  border: 1px solid #d8d8d8;
+  background: #f6f8fa;
   padding: 14px;
   margin: 16px 0;
 }
@@ -127,57 +118,70 @@ table {
 }
 
 th, td {
-  border: 1px solid var(--line);
+  border: 1px solid #d8d8d8;
   padding: 10px 12px;
   text-align: left;
   vertical-align: top;
 }
 
 th {
-  background: var(--soft);
+  background: #f6f8fa;
   font-weight: bold;
 }
 
-ul, ol { margin-top: 6px; padding-left: 22px; }
-li { margin: 4px 0; }
-
 .notice {
-  border-left: 4px solid var(--accent);
-  background: var(--soft);
+  border-left: 4px solid #1f5f99;
+  background: #f6f8fa;
   padding: 12px 14px;
   margin: 18px 0;
 }
 
-.footer {
-  border-top: 1px solid var(--line);
-  padding: 18px 0;
-  color: var(--muted);
+.acknowledgment {
+  text-align: center;
+  margin: 52px auto 10px;
+  padding-top: 24px;
+  max-width: 900px;
+  color: #555;
+  font-size: 0.98rem;
+}
+
+.acknowledgment p { text-align: center; }
+.acknowledgment .people { margin-top: 16px; line-height: 1.8; }
+
+.footertext {
+  border-top: 1px solid #d8d8d8;
+  padding-top: 18px;
+  color: #555;
   font-size: 0.92rem;
 }
 
+.footertext p { text-align: center; }
+
 @media (max-width: 720px) {
-  .nav { align-items: flex-start; flex-direction: column; }
-  .site-logo { height: 48px; }
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 12px 24px;
+    gap: 8px;
+  }
+  .navbar img { height: 52px; margin-right: 0; }
   .grid { grid-template-columns: 1fr; }
   h1 { font-size: 1.65rem; }
 }
-
   </style>
 </head>
-<body>
-<header class="site-header">
-<div class="container nav">
-<a aria-label="AI4SecureCI home" class="brand" href="index.html"><img alt="University logos" class="site-logo" src="https://raw.githubusercontent.com/AI4SecureCI/AI4SecureCI/refs/heads/main/aatttu.png"/><span>AI4SecureCI</span></a>
-<nav aria-label="Main navigation" class="nav-links">
-<a href="index.html">Home</a>
-<a class="active" href="modules.html">Modules</a>
-<a href="award_details.html">Award Details</a>
-<a href="contact.html">Contact</a>
-</nav>
-</div>
-</header>
-<main>
-<div class="container">
+
+<body style="background-color: white;">
+  <!-- Top Navbar of Page -->
+  <div class="navbar" id="topnav">
+    <img src="https://raw.githubusercontent.com/AI4SecureCI/AI4SecureCI/refs/heads/main/aatttu.png" alt="University Logos">
+    <a href="index.html">Home</a>
+    <a href="modules.html">Modules</a>
+    <a href="contact.html">Contact</a>
+    <a href="award_details.html">Award Details</a>
+  </div>
+
+  <div class="hv_align" id="bodytext">
 <section class="page-title">
 <h1>Modules</h1>
 <p class="lead">The AI4SecureCI curriculum is organized into eight connected modules. Module 0 builds the foundation in cloud cyberinfrastructure, AI/ML, and fair AI. Modules 1 through 7 then move students through cloud network security, automated access control, malware detection and classification, adversarial robustness, fairness-aware security, and explainable AI.</p>
@@ -189,7 +193,6 @@ li { margin: 4px 0; }
 <table>
 <thead>
 <tr>
-
 <th>Module no.</th>
 <th>Module title</th>
 <th>Main question</th>
@@ -198,56 +201,48 @@ li { margin: 4px 0; }
 </thead>
 <tbody>
 <tr>
-
 <td><strong>Module 0</strong></td>
 <td>Getting Started with Cloud CyberInfrastructure, Machine Learning, and Fair AI</td>
 <td>What basic cloud, AI/ML, and fairness knowledge is needed before advanced cloud-security work?</td>
 <td>A configured cloud environment, basic ML models, and initial bias/fairness analysis using fairness tools.</td>
 </tr>
 <tr>
-
 <td><strong>Module 1</strong></td>
 <td>Cloud CI Network Security</td>
 <td>Is the cloud network showing signs of intrusion or malicious traffic?</td>
 <td>A cloud network intrusion detection system trained on captured network traffic.</td>
 </tr>
 <tr>
-
 <td><strong>Module 2</strong></td>
 <td>Authorization and Automated Access Control in Cloud CI</td>
 <td>Should a user or process be allowed to access a cloud resource?</td>
 <td>A deep-learning-based access control model that makes authorization decisions from user/resource metadata.</td>
 </tr>
 <tr>
-
 <td><strong>Module 3</strong></td>
 <td>Online Malware Detection in Cloud CI</td>
 <td>Is this VM or workload behaving maliciously?</td>
 <td>A defensive ML detector that classifies runtime behavior as benign or malicious.</td>
 </tr>
 <tr>
-
 <td><strong>Module 4</strong></td>
 <td>Classifying Malware Threats in Cloud CI</td>
 <td>What type or family does the detected malware belong to?</td>
 <td>A malware family classifier trained on behavioral API-call data.</td>
 </tr>
 <tr>
-
 <td><strong>Module 5</strong></td>
 <td>Adversarial Attacks and Defenses in Cloud CI</td>
 <td>Can attackers fool the cloud-security ML model, and how can we defend it?</td>
 <td>Adversarial examples against malware detectors and a retrained, more robust defensive model.</td>
 </tr>
 <tr>
-
 <td><strong>Module 6</strong></td>
 <td>Bias and Fairness in Cloud CI Security</td>
 <td>Can bias in data or algorithms weaken cloud-security decisions?</td>
 <td>A bias-audited and bias-mitigated security model using fairness-aware AI methods.</td>
 </tr>
 <tr>
-
 <td><strong>Module 7</strong></td>
 <td>Explainable AI for Cloud CI Security</td>
 <td>Why did the cloud-security ML model make a specific decision?</td>
@@ -330,7 +325,6 @@ li { margin: 4px 0; }
 <table>
 <thead>
 <tr>
-
 <th>Related module(s)</th>
 <th>Lab activity</th>
 <th>Student deliverable</th>
@@ -338,49 +332,41 @@ li { margin: 4px 0; }
 </thead>
 <tbody>
 <tr>
-
 <td><strong>Module 0</strong></td>
 <td>Configure cloud resources, review secure cloud concepts, practice AI/ML basics, and learn fairness-aware AI concepts.</td>
 <td>A working cloud/AI foundation that supports the advanced labs.</td>
 </tr>
 <tr>
-
 <td><strong>Modules 1, 2, and 3</strong></td>
 <td>Collect or prepare network traffic, access-control metadata, and VM/workload behavior data.</td>
 <td>Cleaned and structured cloud-security datasets ready for model development.</td>
 </tr>
 <tr>
-
 <td><strong>Modules 1, 2, 3, and 4</strong></td>
 <td>Train AI/ML models for intrusion detection, automated access control, malware detection, and malware family classification.</td>
 <td>Defensive models that answer the main security questions in the module summary table.</td>
 </tr>
 <tr>
-
 <td><strong>Modules 1, 2, 3, and 4</strong></td>
 <td>Evaluate trained models using security-relevant metrics such as accuracy, precision, false positives, true positives, and classification performance.</td>
 <td>A model evaluation report with performance results and supporting graphs or tables.</td>
 </tr>
 <tr>
-
 <td><strong>Module 5</strong></td>
 <td>Generate adversarial examples, test whether defensive models can be fooled, and retrain or harden the models.</td>
 <td>A robustness comparison showing model behavior before and after adversarial defense.</td>
 </tr>
 <tr>
-
 <td><strong>Module 6</strong></td>
 <td>Audit datasets and model behavior for data bias and algorithmic bias, then apply mitigation methods.</td>
 <td>A fairness-aware security model with documented bias findings and mitigation results.</td>
 </tr>
 <tr>
-
 <td><strong>Module 7</strong></td>
 <td>Apply explainable AI methods to interpret the final model decisions locally and globally.</td>
 <td>Explainable results showing which features influenced the model's security decisions.</td>
 </tr>
 <tr>
-
 <td><strong>All modules</strong></td>
 <td>Combine the setup, data, models, evaluation, adversarial testing, fairness audit, and explanations into one final analysis.</td>
 <td>A complete cloud CI security report that communicates the problem, method, result, limitations, and defensive value.</td>
@@ -392,10 +378,9 @@ li { margin: 4px 0; }
 <section class="notice">
 <p><strong>Overall learning path:</strong> AI4SecureCI guides students from cloud and AI foundations to practical cloud defense, malware analysis, adversarial testing, fairness-aware improvement, and explainable security reporting.</p>
 </section>
-</div>
-</main>
-<footer class="footer">
-<div class="container">AI4SecureCI — simple static website template.</div>
-</footer>
+  </div>
+  <div class="hv_align footertext" id="footertext">
+    <p>AI4SecureCI — simple static website template.</p>
+  </div>
 </body>
 </html>

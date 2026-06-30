@@ -1,108 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | AI4SecureCI</title>
-  
-<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/AI4SecureCI/AI4SecureCI/refs/heads/main/aatttu.png"><style>
-/* Very simple reusable website theme */
-:root {
-  --bg: #ffffff;
-  --text: #222222;
-  --muted: #555555;
-  --line: #d8d8d8;
-  --soft: #f6f8fa;
-  --accent: #1f5f99;
-  --accent-dark: #16476f;
-}
-
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/AI4SecureCI/AI4SecureCI/refs/heads/main/aatttu.png">
+  <style>
+/* Extracted AIMA-style layout applied to AI4SecureCI pages. */
 * { box-sizing: border-box; }
 
 body {
+  background-color: white;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--text);
-  background: var(--bg);
+  color: #222;
   line-height: 1.55;
 }
 
-a { color: var(--accent); }
-a:hover { color: var(--accent-dark); }
-
-.container {
-  width: min(1050px, calc(100% - 32px));
-  margin: 0 auto;
-}
-
-.site-header {
-  background: var(--soft);
-  border-bottom: 1px solid var(--line);
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  padding: 10px 0;
-}
-
-.brand {
+/* Top Navbar of Page */
+.navbar {
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: var(--text);
-  text-decoration: none;
+  gap: 18px;
+  padding: 12px 42px;
+  border-bottom: 1px solid #16476f;
+  background-color: #1f5f99;
 }
 
-.site-logo {
-  height: 56px;
+.navbar img {
+  height: 64px;
   width: auto;
-  display: block;
+  max-width: 320px;
+  object-fit: contain;
+  margin-right: 18px;
 }
 
-.nav-links {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.nav-links a {
-  color: var(--text);
+.navbar a {
+  color: #ffffff;
   text-decoration: none;
-  padding: 7px 10px;
-  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px 10px;
+  white-space: nowrap;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-  background: var(--accent);
-  color: white;
+.navbar a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
-main { padding: 28px 0 40px; }
-
-.page-title {
-  border-bottom: 2px solid var(--line);
-  margin-bottom: 24px;
-  padding-bottom: 12px;
+.hv_align {
+  width: min(1050px, calc(100% - 48px));
+  margin: 34px auto;
+  text-align: center;
 }
 
-h1 { font-size: 2rem; margin: 0 0 8px; }
+.hv_align p,
+.hv_align li,
+.hv_align td,
+.hv_align th {
+  text-align: left;
+}
+
+.hv_align h1,
+.hv_align h2,
+.hv_align h3 {
+  text-align: center;
+}
+
+h1 { font-size: 2rem; margin: 0 0 12px; }
 h2 { font-size: 1.35rem; margin: 28px 0 10px; }
 h3 { font-size: 1.05rem; margin: 18px 0 8px; }
-
 p { margin: 0 0 12px; }
-.lead { color: var(--muted); font-size: 1.05rem; max-width: 850px; }
+a { color: #1f5f99; }
+a:hover { color: #16476f; }
+ul, ol { margin-top: 6px; padding-left: 22px; }
+li { margin: 4px 0; }
+
+.page-title {
+  border-bottom: none;
+  margin-bottom: 24px;
+  padding-bottom: 0;
+}
+
+.lead {
+  color: #555;
+  font-size: 1.05rem;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .simple-box {
-  border: 1px solid var(--line);
-  background: var(--soft);
-  padding: 14px;
-  margin: 16px 0;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 16px 0 22px;
 }
 
 .grid {
@@ -125,23 +118,20 @@ table {
 }
 
 th, td {
-  border: 1px solid var(--line);
+  border: 1px solid #d8d8d8;
   padding: 10px 12px;
   text-align: left;
   vertical-align: top;
 }
 
 th {
-  background: var(--soft);
+  background: #f6f8fa;
   font-weight: bold;
 }
 
-ul, ol { margin-top: 6px; padding-left: 22px; }
-li { margin: 4px 0; }
-
 .notice {
-  border-left: 4px solid var(--accent);
-  background: var(--soft);
+  border-left: 4px solid #1f5f99;
+  background: #f6f8fa;
   padding: 12px 14px;
   margin: 18px 0;
 }
@@ -151,136 +141,125 @@ li { margin: 4px 0; }
   margin: 52px auto 10px;
   padding-top: 24px;
   max-width: 900px;
-  color: var(--muted);
+  color: #555;
   font-size: 0.98rem;
 }
 
-.acknowledgment p {
-  margin-bottom: 10px;
-}
+.acknowledgment p { text-align: center; }
+.acknowledgment .people { margin-top: 16px; line-height: 1.8; }
 
-.acknowledgment .people {
-  margin-top: 16px;
-  line-height: 1.8;
-}
-
-.footer {
-  border-top: 1px solid var(--line);
-  padding: 18px 0;
-  color: var(--muted);
+.footertext {
+  border-top: 1px solid #d8d8d8;
+  padding-top: 18px;
+  color: #555;
   font-size: 0.92rem;
 }
 
+.footertext p { text-align: center; }
+
 @media (max-width: 720px) {
-  .nav { align-items: flex-start; flex-direction: column; }
-  .site-logo { height: 48px; }
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 12px 24px;
+    gap: 8px;
+  }
+  .navbar img { height: 52px; margin-right: 0; }
   .grid { grid-template-columns: 1fr; }
   h1 { font-size: 1.65rem; }
 }
-
   </style>
 </head>
-<body>
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html" aria-label="AI4SecureCI home"><img class="site-logo" src="https://raw.githubusercontent.com/AI4SecureCI/AI4SecureCI/refs/heads/main/aatttu.png" alt="University logos"><span>AI4SecureCI</span></a>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a class="active" href="index.html">Home</a>
-      <a href="modules.html">Modules</a>
-      <a href="award_details.html">Award Details</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-<main>
-  <div class="container">
-    <section class="page-title">
-      <h1>AI4SecureCI</h1>
-      <p class="lead">Advancing fair, ethical, and AI-driven cybersecurity education for secure cloud cyberinfrastructure.</p>
-    </section>
 
-    <section>
-      <h2>Project Introduction</h2>
-      <p>
+<body style="background-color: white;">
+  <!-- Top Navbar of Page -->
+  <div class="navbar" id="topnav">
+    <img src="https://raw.githubusercontent.com/AI4SecureCI/AI4SecureCI/refs/heads/main/aatttu.png" alt="University Logos">
+    <a href="index.html">Home</a>
+    <a href="modules.html">Modules</a>
+    <a href="contact.html">Contact</a>
+    <a href="award_details.html">Award Details</a>
+  </div>
+
+  <div class="hv_align" id="bodytext">
+<section class="page-title">
+<h1>AI4SecureCI</h1>
+<p class="lead">Advancing fair, ethical, and AI-driven cybersecurity education for secure cloud cyberinfrastructure.</p>
+</section>
+<section>
+<h2>Project Introduction</h2>
+<p>
         AI4SecureCI is a collaborative CyberTraining project designed to prepare the next generation of
         researchers, students, and educators for the rapidly evolving challenges of cloud cyberinfrastructure
         security. As organizations increasingly depend on cloud services, virtualized systems, APIs, containers,
         and AI-driven technologies, the need for a skilled workforce capable of securing these environments has
         become more urgent than ever.
       </p>
-      <p>
+<p>
         The project focuses on the intersection of cloud cyberinfrastructure, cybersecurity, artificial intelligence,
         machine learning, fairness, ethics, and explainable AI. Through hands-on curriculum modules, practical
         labs, student boot camps, faculty workshops, and research-driven training activities, AI4SecureCI aims to
         make advanced cloud security education accessible, practical, and adaptable for undergraduate and graduate
         courses.
       </p>
-      <p>
+<p>
         A central goal of AI4SecureCI is to broaden participation in advanced cyberinfrastructure research by
         engaging diverse and underrepresented student communities. The project brings together Tennessee Tech
-        University, North Carolina A&amp;T State University, and Rutgers University&ndash;Camden to develop and
+        University, North Carolina A&amp;T State University, and Rutgers University–Camden to develop and
         disseminate self-contained learning modules that help students build practical skills in secure cloud
         configuration, network security, automated access control, malware detection and classification,
         adversarial attacks and defenses, fairness-aware AI, and explainable AI for cloud security.
       </p>
-      <p>
+<p>
         By combining technical training with ethical awareness, critical thinking, and research mentorship,
         AI4SecureCI seeks to build a trustworthy, fair, and resilient cloud cybersecurity workforce prepared to
         defend modern cyberinfrastructure against emerging threats.
       </p>
-    </section>
-
-    <section class="simple-box">
-      <h2>Mission</h2>
-      <p>
+</section>
+<section class="simple-box">
+<h2>Mission</h2>
+<p>
         AI4SecureCI develops self-contained, research-driven educational resources that help students and faculty
         understand, build, evaluate, and improve AI-based security solutions for cloud environments. The project
         emphasizes not only technical capability, but also fairness, explainability, responsible AI use, and
         awareness of how bias can affect cybersecurity systems.
       </p>
-    </section>
-
-    <section>
-      <h2>Learning Experience</h2>
-      <p>
+</section>
+<section>
+<h2>Learning Experience</h2>
+<p>
         The curriculum is designed around experiential learning. Students work with cloud platforms, virtual
         machines, security monitoring tools, datasets, and machine learning libraries to study real security
         problems in cloud cyberinfrastructure. The modules support both conceptual understanding and hands-on
         practice, allowing learners to move from fundamentals to advanced topics such as online malware detection,
         malware family classification, adversarial learning, bias mitigation, and explainable machine learning.
       </p>
-      <p>
+<p>
         These materials are intended to be flexible and pluggable so that instructors can integrate them into
         existing courses in cloud computing, cybersecurity, artificial intelligence, machine learning, data mining,
         network security, and related areas without requiring students to take additional courses or delay
         graduation.
       </p>
-    </section>
-
-    <section>
-      <h2>Community and Impact</h2>
-      <p>
+</section>
+<section>
+<h2>Community and Impact</h2>
+<p>
         AI4SecureCI supports a broader community through student boot camps, faculty workshops, tutorials,
         mentoring, course integration, and public dissemination of educational resources. By training students,
         supporting faculty adoption, and encouraging research participation, the project aims to expand access to
         advanced cyberinfrastructure skills and strengthen the national workforce needed to secure modern cloud
         systems.
       </p>
-      <p>
+<p>
         The project especially emphasizes participation from diverse and underrepresented groups, helping create
         pathways for students to enter advanced cybersecurity and cloud cyberinfrastructure research. Through this
         combination of education, outreach, and research-based training, AI4SecureCI contributes to a more secure,
         trustworthy, and inclusive cyber future.
       </p>
-    </section>
-
-
-
-
+</section>
   </div>
-</main>
-<footer class="footer">
-  <div class="container">AI4SecureCI — Fair, ethical, and AI-driven cloud cyberinfrastructure security education.</div>
-</footer>
+  <div class="hv_align footertext" id="footertext">
+    <p>AI4SecureCI — Fair, ethical, and AI-driven cloud cyberinfrastructure security education.</p>
+  </div>
 </body>
 </html>
