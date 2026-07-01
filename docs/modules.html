@@ -114,7 +114,7 @@ li { margin: 4px 0; }
 table {
   border-collapse: collapse;
   width: 100%;
-  min-width: 620px;
+  min-width: 720px;
   background: white;
 }
 
@@ -139,15 +139,32 @@ th {
 
 .acknowledgment {
   text-align: center;
-  margin: 52px auto 10px;
+  margin: 52px auto 32px;
   padding-top: 24px;
   max-width: 900px;
   color: #555;
   font-size: 0.98rem;
 }
 
-.acknowledgment p { text-align: center; }
-.acknowledgment .people { margin-top: 16px; line-height: 1.8; }
+.acknowledgment p {
+  text-align: center;
+}
+
+.acknowledgment a {
+  color: #1f5f99;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.acknowledgment a:hover {
+  color: #16476f;
+  text-decoration: underline;
+}
+
+.acknowledgment .people {
+  margin-top: 16px;
+  line-height: 1.8;
+}
 
 .footertext {
   border-top: 1px solid #d8d8d8;
@@ -180,79 +197,99 @@ th {
 <a href="contact.html">Contact</a>
 <a href="award_details.html">Award Details</a>
 </div>
+
 <div class="hv_align" id="bodytext">
 <section class="page-title">
 <h1>Modules</h1>
 <p class="lead">The AI4SecureCI - AI for Secure Cloud Infrastructure curriculum is organized into eight connected modules. Module 0 builds the foundation in cloud cyberinfrastructure, AI/ML, and fair AI. Modules 1 through 7 then move students through cloud network security, automated access control, malware detection and classification, adversarial robustness, fairness-aware security, and explainable AI.</p>
 </section>
+
 <section>
 <h2>Module summary</h2>
-<p>This table summarizes the main learning question and student-facing output for each module.</p>
+<p>This table summarizes the materials, videos, and student-facing output for each module.</p>
 <div class="table-wrap">
 <table>
 <thead>
 <tr>
 <th>Module no.</th>
 <th>Module title</th>
-<th>Main question</th>
+<th>Materials</th>
+<th>Video</th>
 <th>Student output</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Module 0</strong></td>
+<td><strong>0</strong></td>
 <td>Getting Started with Cloud CyberInfrastructure, Machine Learning, and Fair AI</td>
-<td>What basic cloud, AI/ML, and fairness knowledge is needed before advanced cloud-security work?</td>
-<td>A configured cloud environment, basic ML models, and initial bias/fairness analysis using fairness tools.</td>
+<td>Lecture slides, hands-on activities, and fairness-analysis tools.</td>
+<td>Coming soon</td>
+<td>The students will configure a cloud environment, build basic machine learning models, and perform an initial bias and fairness analysis using fairness tools.</td>
 </tr>
 <tr>
-<td><strong>Module 1</strong></td>
+<td><strong>1</strong></td>
 <td>Cloud CI Network Security</td>
-<td>Is the cloud network showing signs of intrusion or malicious traffic?</td>
-<td>A cloud network intrusion detection system trained on captured network traffic.</td>
+<td>Lecture slides, network traffic dataset, and intrusion-detection lab materials.</td>
+<td>Coming soon</td>
+<td>The students will train and evaluate a cloud network intrusion detection system using captured network traffic.</td>
 </tr>
 <tr>
-<td><strong>Module 2</strong></td>
+<td><strong>2</strong></td>
 <td>Authorization and Automated Access Control in Cloud CI</td>
-<td>Should a user or process be allowed to access a cloud resource?</td>
-<td>A deep-learning-based access control model that makes authorization decisions from user/resource metadata.</td>
+<td>Lecture slides, access-control dataset, and deep-learning lab materials.</td>
+<td>Coming soon</td>
+<td>The students will develop a deep-learning-based access control model that makes authorization decisions using user and resource metadata.</td>
 </tr>
 <tr>
-<td><strong>Module 3</strong></td>
+<td><strong>3</strong></td>
 <td>Online Malware Detection in Cloud CI</td>
-<td>Is this VM or workload behaving maliciously?</td>
-<td>A defensive ML detector that classifies runtime behavior as benign or malicious.</td>
+<td>Lecture slides, runtime behavior data, and malware-detection lab materials.</td>
+<td>Coming soon</td>
+<td>The students will build a defensive machine learning detector that classifies cloud workload behavior as benign or malicious.</td>
 </tr>
 <tr>
-<td><strong>Module 4</strong></td>
+<td><strong>4</strong></td>
 <td>Classifying Malware Threats in Cloud CI</td>
-<td>What type or family does the detected malware belong to?</td>
-<td>A malware family classifier trained on behavioral API-call data.</td>
+<td>Lecture slides, API-call behavior dataset, and malware-classification lab materials.</td>
+<td>Coming soon</td>
+<td>The students will train a malware family classifier using behavioral API-call data to identify malware types or families.</td>
 </tr>
 <tr>
-<td><strong>Module 5</strong></td>
+<td><strong>5</strong></td>
 <td>Adversarial Attacks and Defenses in Cloud CI</td>
-<td>Can attackers fool the cloud-security ML model, and how can we defend it?</td>
-<td>Adversarial examples against malware detectors and a retrained, more robust defensive model.</td>
+<td>Lecture slides, adversarial-example notebook, and robustness-evaluation materials.</td>
+<td>Coming soon</td>
+<td>The students will generate adversarial examples against malware detection models and retrain defensive models to improve robustness.</td>
 </tr>
 <tr>
-<td><strong>Module 6</strong></td>
+<td><strong>6</strong></td>
 <td>Bias and Fairness in Cloud CI Security</td>
-<td>Can bias in data or algorithms weaken cloud-security decisions?</td>
-<td>A bias-audited and bias-mitigated security model using fairness-aware AI methods.</td>
+<td>Lecture slides, fairness metrics, bias-auditing tools, and mitigation lab materials.</td>
+<td>Coming soon</td>
+<td>The students will audit a cloud-security model for bias and apply fairness-aware mitigation methods to improve decision quality.</td>
 </tr>
 <tr>
-<td><strong>Module 7</strong></td>
+<td><strong>7</strong></td>
 <td>Explainable AI for Cloud CI Security</td>
-<td>Why did the cloud-security ML model make a specific decision?</td>
-<td>Explainable malware detection results using SHAP-based local and global feature explanations.</td>
+<td>Lecture slides, SHAP notebook, and explainability-analysis materials.</td>
+<td>Coming soon</td>
+<td>The students will use SHAP-based local and global explanations to interpret the decisions made by cloud-security machine learning models.</td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
-
 </div>
+
+<div class="acknowledgment">
+<p>
+These modules were developed through a joint effort provided by faculty and students at 
+<a href="https://www.tntech.edu/" target="_blank" rel="noopener noreferrer">Tennessee Technological University</a> in Cookeville, TN, 
+<a href="https://www.ncat.edu/" target="_blank" rel="noopener noreferrer">North Carolina Agricultural and Technical State University</a> in Greensboro, NC, and 
+<a href="https://www.albany.edu/" target="_blank" rel="noopener noreferrer">SUNY at Albany</a>, funded by grants provided by the U.S. National Science Foundation.
+</p>
+</div>
+
 <div class="hv_align footertext" id="footertext">
 <p>AI4SecureCI - AI for Secure Cloud Infrastructure — simple static website template.</p>
 </div>
